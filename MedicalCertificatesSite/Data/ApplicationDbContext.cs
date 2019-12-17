@@ -19,6 +19,9 @@ namespace MedicalCertificatesSite.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
+
+
             builder.Entity<Doctor>().HasData(
                 new Doctor
                 {
